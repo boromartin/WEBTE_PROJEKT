@@ -1,0 +1,77 @@
+.road {
+    background: url(images/krizovatky/krizovatka3.svg);
+    background-size: 100% 100%;
+    width: 60%;
+    padding-top: 35%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .redcar {
+    cursor: pointer;
+    transform: translate(515%,100%);
+  }
+  
+  .redcardriving {
+    transform-origin: 50% 80%;
+    animation-name: redcDriveAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes redcDriveAnim {
+    0%   {transform: translate(515%,100%);}
+    20%  {transform: translate(515%,50%);}
+    40%  {transform: translate(545%,0%) rotate(50deg);}
+    60%  {transform: translate(620%,-35%) rotate(40deg);}
+    80%  {transform: translate(710%,-85%) rotate(90deg);}
+    100% {transform: translate(1100%,-85%) rotate(90deg);}
+  }
+  
+  #redc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #redcindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_cervena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }
+  
+  .bluecar {
+    cursor: pointer;
+    transform: translate(270%,-105%) rotate(130deg);
+  }
+  
+  .bluecardriving {
+    transform-origin: 50% 80%;
+    animation-name: bluecDriveAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes bluecDriveAnim {
+    0%   {transform: translate(220%,-155%) rotate(130deg);}
+    15%  {transform: translate(300%,-115%) rotate(100deg);}
+    30%  {transform: translate(420%,-100%) rotate(80deg);}
+    45%  {transform: translate(520%,-105%) rotate(60deg);}
+    60%  {transform: translate(590%,-125%) rotate(40deg);}
+    75%  {transform: translate(690%,-185%) rotate(90deg);}
+    100% {transform: translate(1100%,-185%) rotate(90deg);}
+  }
+  
+  #bluec {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #bluecindicator {
+    width: 100%;
+    background: url(images/sprites/auto2/auto2_modra.svg) 0% 0%;
+    background-size: 299% 100%;
+  }

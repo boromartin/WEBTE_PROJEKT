@@ -1,0 +1,187 @@
+/*default*/
+body {
+    margin: auto 20% auto 20%;
+    font: 0.8vW arial;
+    padding-bottom: 2em;
+}
+
+#main_nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 0.2%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#main_nav li {
+    float: left;
+}
+
+#main_nav li a {
+    font-size: 1.2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.8em  1em;
+    text-decoration: none;
+}
+
+#main_nav li a:hover {
+    background-color:#9faeb6;
+  }
+
+#secondary_nav ul {
+    font-size: 0.8em;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#secondary_nav li {
+    float: left;
+}
+
+#secondary_nav li a {
+    font-size: 1.2em;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.8em  1em;
+    text-decoration: none;
+}
+
+#secondary_nav li a:hover {
+    background-color:#9faeb6;
+  }
+
+.active {
+    background-color: #80949f;
+  }
+
+h1 {
+    text-align: center;
+    font-family: 'Arial Black';
+    font-size: 1.8em;
+    margin: 0.2em;
+}
+
+h2 {
+    font-family: 'Arial Black';
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    margin-top: .5em;
+    margin-bottom: .1em;
+  }
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    text-align: center;
+    margin: 1% 20% 0 20%;
+    padding: .1em;
+}
+
+button {
+    background-color: #333;;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.5%;
+    cursor: pointer;
+    border-radius: 0.6em;
+}
+
+button:hover {
+    background-color: #9faeb6;
+    color: white;
+}
+
+.road{
+    margin-left: 20%;
+}
+
+#buttons {
+    margin-left: 40%;
+}
+
+#answer {
+    text-align: center;
+    display: none;
+}
+
+#grade {
+    position: relative;
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+  }
+
+/*print*/
+@media print {
+  body {
+    margin: 0;
+    font: 10pt arial;
+  }
+
+#main_nav li a {
+    font-size: 12pt;
+    color: #000;
+}
+
+#secondary_nav li a {
+    font-size: 11pt;
+    color: #000;
+}
+
+.active {
+    font-weight: bold;
+  }
+
+h1 {
+    font-size: 16pt;
+}
+
+h2 {
+    font-size: 14pt;
+  }
+
+h3 {
+    font-size: 12pt;
+}
+
+button {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+.road{
+    display: none;
+}
+
+#answer {
+    display: block;
+}
+
+#grade {
+    font-size: 14pt;
+  }
+}

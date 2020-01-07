@@ -1,0 +1,102 @@
+.road {
+    background: url(images/krizovatky/krizovatka2.svg);
+    background-size: 100% 100%;
+    width: 60%;
+    padding-top: 22.15%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .redcar {
+    cursor: pointer;
+    transform: translate(390%,-100%) rotate(180deg);
+  }
+  
+  .redcardriving {
+    transform-origin: 50% 80%;
+    animation-name: redcDriveAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes redcDriveAnim {
+    0%   {transform: translate(390%,-160%) rotate(180deg);}
+    25%  {transform: translate(390%,-120%) rotate(180deg);}
+    50%  {transform: translate(350%,-45%) rotate(270deg);}
+    100% {transform: translate(-200%,-45%) rotate(270deg);}
+  }
+  
+  #redc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #redcindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_cervena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }
+  
+  .bluecar {
+    cursor: pointer;
+    transform: translate(700%,-115%) rotate(-90deg);
+  }
+  
+  .bluecardriving {
+    transform-origin: 50% 80%;
+    animation-name: bluecDriveAnim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes bluecDriveAnim {
+    0%   {transform: translate(760%,-145%) rotate(-90deg);}
+    100% {transform: translate(-200%,-145%) rotate(-90deg);}
+  }
+  
+  #bluec {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #bluecindicator {
+    width: 100%;
+    background: url(images/sprites/auto2/auto2_modra.svg) 0% 0%;
+    background-size: 299% 100%;
+  }
+
+  .greencar {
+    cursor: pointer;
+    transform: translate(520%,-75%);
+  }
+  
+  .greencardriving {
+    transform-origin: 50% 80%;
+    animation-name: greencDriveAnim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes greencDriveAnim {
+    0%   {transform: translate(520%,-80%);}
+    25%  {transform: translate(520%,-160%);}
+    50%  {transform: translate(400%,-245%) rotate(-90deg);}
+    100% {transform: translate(-200%,-245%) rotate(-90deg);}
+  }
+  
+  #greenc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #greencindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_zelena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }

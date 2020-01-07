@@ -1,0 +1,70 @@
+.road {
+  background: url(images/krizovatky/krizovatka5.svg);
+  background-size: 100% 100%;
+  width: 60%;
+  padding-top: 41.25%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bluecar {
+  cursor: pointer;
+  transform: translate(630%,-105%) rotate(-90deg);
+}
+
+.bluecardriving {
+  transform-origin: 50% 80%;
+  animation-name: bluecDriveAnim;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bluecDriveAnim {
+  0%   {transform: translate(690%,-135%) rotate(-90deg);}
+  25%  {transform: translate(570%,-135%) rotate(-90deg);}
+  50%  {transform: translate(450%,-165%);}
+  100% {transform: translate(450%,-450%);}
+}
+
+#bluec {
+  width: 10%;
+  height: 10%;
+  z-index: 1;
+}
+
+#bluecindicator {
+  width: 100%;
+  background: url(images/sprites/auto1/auto1_modra.svg) 0% 0%;
+  background-size: 302% 100%;
+}
+
+.tramcar {
+  cursor: pointer;
+  transform: translate(170%,-461%);
+}
+
+.tramcardriving {
+  transform-origin: 50% 80%;
+  animation-name: tramcDriveAnim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tramcDriveAnim {
+  0%   {transform: translate(170%,-461%);}
+  100% {transform: translate(-120%,-461%);}
+}
+
+#tramc {
+  width: 35%;
+  height: 35%;
+  z-index: 1;
+}
+
+#tramcindicator {
+  width: 100%;
+  background: url(images/elektricka.svg) 0% 0%;
+  background-size: 100% 100%;
+}

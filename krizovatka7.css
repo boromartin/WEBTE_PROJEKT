@@ -1,0 +1,162 @@
+.road {
+    background: url(images/krizovatky/krizovatka7.svg);
+    background-size: 100% 100%;
+    width: 60%;
+    padding-top: 12%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .redcar {
+    cursor: pointer;
+    transform: translate(520%,210%);
+  }
+  
+  .redcardriving {
+    transform-origin: 50% 80%;
+    animation-name: redcDriveAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes redcDriveAnim {
+    0%   {transform: translate(520%,210%);}
+    25%  {transform: translate(520%,155%);}
+    50%  {transform: translate(550%,95%) rotate(90deg);}
+    100% {transform: translate(1100%,95%) rotate(90deg);}
+  }
+  
+  #redc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #redcindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_cervena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }
+  
+  .bluecar {
+    cursor: pointer;
+    transform: translate(700%,-35%) rotate(-90deg);
+  }
+  
+  .bluecardriving {
+    transform-origin: 50% 80%;
+    animation-name: bluecDriveAnim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes bluecDriveAnim {
+    0%   {transform: translate(760%,-65%) rotate(270deg);}
+    25%  {transform: translate(540%,-65%) rotate(270deg);}
+    50%  {transform: translate(385%,-15%) rotate(180deg);}
+    100% {transform: translate(385%,250%) rotate(180deg);}
+  }
+  
+  #bluec {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #bluecindicator {
+    width: 100%;
+    background: url(images/sprites/auto2/auto2_modra.svg) 0% 0%;
+    background-size: 299% 100%;
+  }
+
+  .greencar {
+    cursor: pointer;
+    transform: translate(200%,-75%) rotate(90deg);
+  }
+  
+  .greencardriving {
+    transform-origin: 50% 80%;
+    animation-name: greencDriveAnim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes greencDriveAnim {
+    0%   {transform: translate(140%,-105%) rotate(90deg);}
+    100% {transform: translate(1100%,-105%) rotate(90deg);}
+  }
+  
+  #greenc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #greencindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_zelena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }
+  
+  #cyc {
+    width: 8%;
+    height: 8%;
+    z-index: 1;
+  }
+  
+  #cycl {
+    width: 100%;
+    background: url(images/cyklista.svg) 0% 0%;
+    background-size: 100% 100%;
+  }
+  
+  .cyclist {
+    animation-name: cyclistAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes cyclistAnim {
+    0%   {transform: translate(-300%,-415%);}
+    10%   {transform: translate(-100%,-415%);}
+    10.0001%   {transform: scaleY(-1) translate(-100%,420%);}
+    15%   {transform: scaleY(-1) translate(0%,420%);}
+    15.0001%   {transform: translate(0%,-415%);}
+    20%   {transform: translate(100%,-415%);}
+    20.0001%   {transform: scaleY(-1) translate(100%,420%);}
+    25%   {transform: scaleY(-1) translate(200%,420%);}
+    25.0001%   {transform: translate(200%,-415%);}
+    30%   {transform: translate(300%,-415%);}
+    30.0001%   {transform: scaleY(-1) translate(300%,420%);}
+    35%   {transform: scaleY(-1) translate(400%,420%);}
+    35.0001%   {transform: translate(400%,-415%);}
+    40%   {transform: translate(500%,-415%);}
+    40.0001%   {transform: scaleY(-1) translate(500%,420%);}
+    45%   {transform: scaleY(-1) translate(600%,420%);}
+    45.0001%   {transform: translate(600%,-415%);}
+    50%   {transform: translate(700%,-415%);}
+    50.0001%   {transform: scaleY(-1) translate(700%,420%);}
+    55%   {transform: scaleY(-1) translate(800%,420%);}
+    55.0001%   {transform: translate(800%,-415%);}
+    60%   {transform: translate(900%,-415%);}
+    60.0001%   {transform: scaleY(-1) translate(900%,420%);}
+    65%   {transform: scaleY(-1) translate(1000%,420%);}
+    65.0001%   {transform: translate(1000%,-415%);}
+    70%   {transform: translate(1100%,-415%);}
+    70.0001%   {transform: scaleY(-1) translate(1100%,420%);}
+    75%   {transform: scaleY(-1) translate(1200%,420%);}
+    75.0001%   {transform: translate(1200%,-415%);}
+    80%   {transform: translate(1300%,-415%);}
+    80.0001%   {transform: scaleY(-1) translate(1300%,420%);}
+    85%   {transform: scaleY(-1) translate(1400%,420%);}
+    85.0001%   {transform: translate(1400%,-415%);}
+    90%   {transform: translate(1500%,-415%);}
+    90.0001%   {transform: scaleY(-1) translate(1500%,420%);}
+    95%   {transform: scaleY(-1) translate(1600%,420%);}
+    95.0001%   {transform: translate(1600%,-415%);}
+    100% {transform: translate(1700%,-415%);}
+  }

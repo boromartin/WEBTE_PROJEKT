@@ -1,0 +1,70 @@
+.road {
+    background: url(images/krizovatky/krizovatka8.svg);
+    background-size: 100% 100%;
+    width: 60%;
+    padding-top: 35%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .redcar {
+    cursor: pointer;
+    transform: translate(275%,-15%) rotate(60deg);
+  }
+  
+  .redcardriving {
+    transform-origin: 50% 80%;
+    animation-name: redcDriveAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes redcDriveAnim {
+    0%   {transform: translate(220%,-30%) rotate(60deg);}
+    25%  {transform: translate(390%,-80%) rotate(60deg);}
+    50%  {transform: translate(550%,-115%) rotate(90deg);}
+    100% {transform: translate(1100%,-115%) rotate(90deg);}
+  }
+  
+  #redc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #redcindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_cervena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }
+  
+  .greencar {
+    cursor: pointer;
+    transform: translate(190%,-185%) rotate(90deg);
+  }
+  
+  .greencardriving {
+    transform-origin: 50% 80%;
+    animation-name: greencDriveAnim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes greencDriveAnim {
+    0%   {transform: translate(130%,-215%) rotate(90deg);}
+    100% {transform: translate(1100%,-215%) rotate(90deg);}
+  }
+  
+  #greenc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #greencindicator {
+    width: 100%;
+    background: url(images/sprites/auto2/auto2_zelena.svg) 0% 0%;
+    background-size: 299% 100%;
+  }

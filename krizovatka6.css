@@ -1,0 +1,130 @@
+.road {
+    background: url(images/krizovatky/krizovatka6.svg);
+    background-size: 100% 100%;
+    width: 60%;
+    padding-top: 28.5%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .redcar {
+    cursor: pointer;
+    transform: translate(515%,80%);
+  }
+  
+  .redcardriving {
+    transform-origin: 50% 80%;
+    animation-name: redcDriveAnim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes redcDriveAnim {
+    0%   {transform: translate(515%,80%);}
+    25%  {transform: translate(515%,-25%);}
+    50%  {transform: translate(410%,-95%) rotate(-90deg);}
+    100% {transform: translate(-200%,-95%) rotate(-90deg);}
+  }
+  
+  #redc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #redcindicator {
+    width: 100%;
+    background: url(images/sprites/auto1/auto1_cervena.svg) 0% 0%;
+    background-size: 302% 100%;
+  }
+  
+  .greencar {
+    cursor: pointer;
+    transform: translate(700%,-165%) rotate(270deg);
+  }
+  
+  .greencardriving {
+    transform-origin: 50% 80%;
+    animation-name: greencDriveAnim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes greencDriveAnim {
+    0%   {transform: translate(760%,-195%) rotate(270deg);}
+    100% {transform: translate(-200%,-195%) rotate(270deg);}
+  }
+  
+  #greenc {
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
+  
+  #greencindicator {
+    width: 100%;
+    background: url(images/sprites/auto2/auto2_zelena.svg) 0% 0%;
+    background-size: 299% 100%;
+  }
+  
+  #ped {
+    width: 5%;
+    height: 5%;
+    z-index: 1;
+  }
+  
+  #pedest {
+    width: 100%;
+    background: url(images/chodec.svg) 0% 0%;
+    background-size: 100% 100%;
+  }
+  
+  .pedestrian {
+    animation-name: pedestrianAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes pedestrianAnim {
+    0%   {transform: translate(-325%,-680%);}
+    10%   {transform: translate(-125%,-680%);}
+    10.0001%   {transform: scaleY(-1) translate(-125%,680%);}
+    15%   {transform: scaleY(-1) translate(0%,680%);}
+    15.0001%   {transform: translate(0%,-680%);}
+    20%   {transform: translate(125%,-680%);}
+    20.0001%   {transform: scaleY(-1) translate(125%,680%);}
+    25%   {transform: scaleY(-1) translate(250%,680%);}
+    25.0001%   {transform: translate(250%,-680%);}
+    30%   {transform: translate(375%,-680%);}
+    30.0001%   {transform: scaleY(-1) translate(375%,680%);}
+    35%   {transform: scaleY(-1) translate(500%,680%);}
+    35.0001%   {transform: translate(500%,-680%);}
+    40%   {transform: translate(625%,-680%);}
+    40.0001%   {transform: scaleY(-1) translate(625%,680%);}
+    45%   {transform: scaleY(-1) translate(750%,680%);}
+    45.0001%   {transform: translate(750%,-680%);}
+    50%   {transform: translate(875%,-680%);}
+    50.0001%   {transform: scaleY(-1) translate(875%,680%);}
+    55%   {transform: scaleY(-1) translate(1000%,680%);}
+    55.0001%   {transform: translate(1000%,-680%);}
+    60%   {transform: translate(1125%,-680%);}
+    60.0001%   {transform: scaleY(-1) translate(1125%,680%);}
+    65%   {transform: scaleY(-1) translate(1250%,680%);}
+    65.0001%   {transform: translate(1250%,-680%);}
+    70%   {transform: translate(1375%,-680%);}
+    70.0001%   {transform: scaleY(-1) translate(1375%,680%);}
+    75%   {transform: scaleY(-1) translate(1500%,680%);}
+    75.0001%   {transform: translate(1500%,-680%);}
+    80%   {transform: translate(1625%,-680%);}
+    80.0001%   {transform: scaleY(-1) translate(1625%,680%);}
+    85%   {transform: scaleY(-1) translate(1750%,680%);}
+    85.0001%   {transform: translate(1750%,-680%);}
+    90%   {transform: translate(1875%,-680%);}
+    90.0001%   {transform: scaleY(-1) translate(1875%,680%);}
+    95%   {transform: scaleY(-1) translate(2000%,680%);}
+    95.0001%   {transform: translate(2000%,-680%);}
+    100% {transform: translate(2125%,-680%);}
+  }

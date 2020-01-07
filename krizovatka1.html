@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="krizovatka1.css">
+        <script src="krizovatka1.js"></script>
+        <meta charset="utf-8">
+        <title>krizovatka1</title>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+    </head>
+    <body>
+        <header>
+            <h1>Webte finálne zadanie</h1>
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="kalendar.html">Kalendár</a></li>
+                    <li><a class="active" href="krizovatka1.html">Križovatka 1-5</a></li>
+                    <li><a href="krizovatka6.html">Križovatka 6-10</a></li>
+                    <li><a href="krizovatka11.html">Križovatka 11-15</a></li>
+                    <li><a href="info.html">Informácie</a></li>
+                </ul>
+            </nav>
+            <nav id="secondary_nav">
+                <ul>
+                    <li><a class="active" href="krizovatka1.html">Križovatka 1</a></li>
+                    <li><a href="krizovatka2.html">Križovatka 2</a></li>
+                    <li><a href="krizovatka3.html">Križovatka 3</a></li>
+                    <li><a href="krizovatka4.html">Križovatka 4</a></li>
+                    <li><a href="krizovatka5.html">Križovatka 5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="road">
+            <div class="redcar" id="redc" onclick="redcdrive()">
+              <img id="redcindicator" src="images/blank.png" alt="cervene auto">
+            </div>
+            <div class="bluecar" id="bluec" onclick="bluecdrive()">
+              <img id="bluecindicator" src="images/blank.png" alt="modre auto">
+            </div>
+          </div>
+        <div id="buttons">
+            <button onclick="window.location.reload()">Reload</button>
+            <button onclick="playDemo()">Demo</button>
+            <button onclick="showAnswer()">Riešenie</button>
+        </div>
+        <div id="grade"></div>
+        <div id="answer">
+            <b>Správne riešenie:</b>
+            <br>
+            1. Modré auto - pretože sa nachádza na hlavnej ceste a pokračuje po nej, nikomu nemusí dávať prednosť
+            <br>
+            2. Červené auto - pretože sa nachádza na vedľajšej ceste a pri vstupe na hlavnú cestu musí dať prednosť autu ktoré ide po nej
+        </div>
+        <footer>Copyright &copy; Juraj Puszter, Peter Csicsay, Martin Borovanský</footer>
+    </body>
+</html>
